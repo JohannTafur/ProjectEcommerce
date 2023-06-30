@@ -10,4 +10,4 @@ const ShowPageComponents = () => {
     )
 }
 
-export default ShowPageComponents 
+export default ShowPageComponents
