@@ -1,5 +1,7 @@
-export default fetchData = async () => {
-    const response = await fetch('https://fakestoreapi.com/products')
+const fetchData = async (urlApi) => {
+    const response = await fetch(urlApi)
     const data = await response.json()
-    console.log(data)
+   return data
 }
+
+export default fetchData
