@@ -1,0 +1,37 @@
+article {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.productHeader {
+    margin-bottom: 10px;
+}
+
+.productHeader h2 {
+    font-size: 20px;
+}
+
+.productImage {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.productFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productFooter h4 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.productFooter h2 {
+    font-size: 24px;
+    margin: 0;
+}

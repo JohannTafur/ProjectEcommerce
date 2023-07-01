@@ -3,9 +3,9 @@ import ProductCard from "./products/ProductCard"
 const ShowPageComponents = () => {
     return (
         <>
-            <article>
+            <section>
                 <ProductCard />
-            </article>
+            </section>
         </>
     )
 }
