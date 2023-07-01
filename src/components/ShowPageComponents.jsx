@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
+import '../style/showPageComponents.css'
 import fetchData from "../helpers/fetchData"
 import ProductCard from "./products/ProductCard"
 
 const ShowPageComponents = () => {
-    const [showArticles, getShowArticles] = useState({})
+    const [showArticles, getShowArticles] = useState([])
 
     const productUrl = 'https://fakestoreapi.com/products'
 
@@ -20,14 +21,13 @@ const ShowPageComponents = () => {
     return (
         <>
             <section>
-                {showArticles.map((item) =>
+                {showArticles.map((product) =>
                     <ProductCard
-                        productImage={item.image}
-                        productName={item.title}
-                        productCategory={item.category}
-                        productPrice={item.price}
+                        productImage={product.image}
+                        productName={product.title}
+                        productCategory={product.category}
+                        productPrice={product.price}
                     />)}
-
             </section>
         </>
     )

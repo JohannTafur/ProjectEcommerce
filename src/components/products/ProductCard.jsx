@@ -1,5 +1,4 @@
 import '../../style/productCard.css'
-import img1 from '../../img/DQ7584-300-1_640.png'
 
 const ProductCard = ({ productImage, productName, productCategory, productPrice }) => {
     return (
