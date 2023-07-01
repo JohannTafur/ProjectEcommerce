@@ -1,17 +1,7 @@
 article {
-    width: 300px;
+    width: 15%;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.productHeader {
-    margin-bottom: 10px;
-}
-
-.productHeader h2 {
-    font-size: 20px;
+    padding: 3%;
 }
 
 .productImage {
@@ -31,7 +21,8 @@ article {
     margin: 0;
 }
 
-.productFooter h2 {
-    font-size: 24px;
+.productFooter h2,
+.productHeader h2 {
+    font-size: 34px;
     margin: 0;
 }
