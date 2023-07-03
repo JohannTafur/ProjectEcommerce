@@ -19,19 +19,21 @@ const ShowPageComponents = () => {
     }, [])
 
     return (
-        <>
-            <section>
-                <div className="products">
-                    {showArticles.map((product) =>
-                        <ProductCard
-                            productImage={product.image}
-                            productName={product.title}
-                            productCategory={product.category}
-                            productPrice={product.price}
-                        />)}
-                </div>
+        <div>
+            <section className="products">
+                {showArticles.map((product) =>
+                    <ProductCard
+                        productImage={product.image}
+                        productName={product.title}
+                        productCategory={product.category}
+                        productPrice={product.price}
+                    />)}
             </section>
-        </>
+
+            <section className="productFilters">
+
+            </section>
+        </div>
     )
 }
 
