@@ -5,6 +5,7 @@ article {
     width: 15%;
     border: 1px solid #ccc;
     padding: 3%;
+    cursor: pointer;
 }
 
 .productImage {
@@ -21,11 +22,10 @@ article {
 
 .productFooter h4 {
     font-size: 16px;
-    margin: 0;
+    color: #ccc;
 }
 
 .productFooter h2,
 .productHeader h2 {
     font-size: 34px;
-    margin: 0;
 }

@@ -1,4 +1,8 @@
-section {
-    display: flex;
-    flex-wrap: wrap;
-  }
+* {
+  margin: 0;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
