@@ -2,36 +2,53 @@ import { useEffect, useState } from "react"
 import '../style/showPageComponents.css'
 import fetchData from "../helpers/fetchData"
 import ProductCard from "./products/ProductCard"
+import Categories from "./products/Categories"
 
 const ShowPageComponents = () => {
-    const [showArticles, getShowArticles] = useState([])
+    const [showProducts, getShowProducts] = useState([]);
+    const [showCategories, getShowCategories] = useState([]);
 
     const productUrl = 'https://fakestoreapi.com/products'
+    const categoriesUrl = 'https://fakestoreapi.com/products/categories'
 
     const bringProducts = async (url) => {
         const response = await fetchData(url)
         console.log(response)
-        getShowArticles(response)
+        getShowProducts(response)
+    }
+
+    const bringCategories = async (url) => {
+        const response = await fetchData(url)
+        console.log(response)
+        getShowCategories(response)
     }
 
     useEffect(() => {
         bringProducts(productUrl)
+        bringCategories(categoriesUrl)
     }, [])
 
     return (
         <div>
+            <nav className="productFilters">
+                <ul>
+                    <h1>Categories</h1>
+                    {showCategories.map((category) =>
+                        <Categories
+                            categoryName={category}
+                        />
+                    )}
+                </ul>
+            </nav>
+
             <section className="products">
-                {showArticles.map((product) =>
+                {showProducts.map((product) =>
                     <ProductCard
                         productImage={product.image}
                         productName={product.title}
                         productCategory={product.category}
                         productPrice={product.price}
                     />)}
-            </section>
-
-            <section className="productFilters">
-
             </section>
         </div>
     )
