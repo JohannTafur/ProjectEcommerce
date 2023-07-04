@@ -2,30 +2,25 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 15%;
-    border: 1px solid #ccc;
+    width: 27.1%;
+    border: 1px solid rgb(204, 204, 204);
     padding: 3%;
     cursor: pointer;
 }
 
+.imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .productImage {
-    width: 100%;
+    width: 60%;
     height: auto;
-    margin-bottom: 10px;
+    margin: 65px 0;
 }
 
 .productFooter {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.productFooter h4 {
-    font-size: 16px;
-    color: #ccc;
-}
-
-.productFooter h2,
-.productHeader h2 {
-    font-size: 34px;
 }

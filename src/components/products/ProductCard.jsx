@@ -4,12 +4,14 @@ const ProductCard = ({ productImage, productName, productCategory, productPrice 
     return (
         <article>
             <div className="productHeader">
-                <h2>{productName}</h2>
+                <h1>{productName}</h1>
             </div>
-            <img className="productImage" src={productImage} alt="" />
+            <div className="imageContainer">
+                <img className="productImage" src={productImage} alt="" />
+            </div>
             <div className="productFooter">
-                <h4>{productCategory}</h4>
-                <h2>${productPrice}</h2>
+                <p>{productCategory}</p>
+                <h1>${productPrice}</h1>
             </div>
         </article>
     )

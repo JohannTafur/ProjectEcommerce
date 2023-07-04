@@ -1,8 +1,40 @@
 * {
   margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 17px;
+  color: rgb(185, 185, 185);
+}
+
+.ContendedFromTheStore {
+  position: fixed;
+  display: flex;
+  height: 100vh;
+}
+
+.productFilters {
+  background-color: rgb(226, 226, 226);
+  width: 18%;
+  height: 100vh;
+}
+
+.productFilters h2 {
+  margin: 20px 45px;
 }
 
 .products {
   display: flex;
   flex-wrap: wrap;
+  width: 82%;
+  overflow-y: auto;
 }

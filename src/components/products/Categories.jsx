@@ -1,7 +1,9 @@
+import '../../style/categories.css'
+
 const Categories = ({ categoryName }) => {
     return (
 
-        <li>{categoryName}</li>
+        <li className='categoryName'>{categoryName}</li>
 
     )
 }

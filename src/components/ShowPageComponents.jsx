@@ -29,10 +29,10 @@ const ShowPageComponents = () => {
     }, [])
 
     return (
-        <div>
+        <div className="ContendedFromTheStore">
             <nav className="productFilters">
+                <h2>Categories</h2>
                 <ul>
-                    <h1>Categories</h1>
                     {showCategories.map((category) =>
                         <Categories
                             categoryName={category}
