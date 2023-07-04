@@ -1,10 +1,31 @@
 import '../../style/productCard.css'
+import cardAdd from '../../img/add.png'
 
-const ProductCard = ({ productImage, productName, productCategory, productPrice }) => {
+import React, { useState } from 'react';
+
+const ProductCard = ({ productName, productImage, productCategory, productPrice }) => {
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
+
     return (
-        <article>
+        <article
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+        >
             <div className="productHeader">
                 <h1>{productName}</h1>
+                {isHovered && (
+                    <button className="hoverButton">
+                        <img src={cardAdd} alt="" />
+                    </button>
+                )}
             </div>
             <div className="imageContainer">
                 <img className="productImage" src={productImage} alt="" />
@@ -14,7 +35,7 @@ const ProductCard = ({ productImage, productName, productCategory, productPrice 
                 <h1>${productPrice}</h1>
             </div>
         </article>
-    )
-}
+    );
+};
 
-export default ProductCard
+export default ProductCard;

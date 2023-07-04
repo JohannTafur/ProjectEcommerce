@@ -5,7 +5,26 @@ article {
     width: 27.1%;
     border: 1px solid rgb(204, 204, 204);
     padding: 3%;
+}
+
+.productHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productHeader button {
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    border: none;
+    background: none;
+    padding: 0;
     cursor: pointer;
+}
+
+.productHeader img {
+    max-width: 100%;
 }
 
 .imageContainer {
@@ -23,4 +42,8 @@ article {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+article:hover {
+    background-color: rgb(204, 204, 204);
 }
